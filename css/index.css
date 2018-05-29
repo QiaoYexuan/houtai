@@ -30,3 +30,64 @@
 .content .subnav .active {
   color: #777777;
 }
+.content .form-pic {
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+.content .form-pic li {
+  float: left;
+  box-sizing: border-box;
+  padding: 14px 0 0 14px;
+  width: 298px;
+  height: 242px;
+  margin-right: 25px;
+}
+.content .form-pic li img {
+  width: 50px;
+  opacity: 0.5;
+}
+.content .form-pic li .pic {
+  box-sizing: border-box;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 14px;
+}
+.content .form-pic li .number {
+  width: 194px;
+  height: 124px;
+  margin-left: 90px;
+  background-color: #fff;
+}
+.content .form-pic li .number span {
+  display: block;
+  text-align: center;
+}
+.content .form-pic li .number .fonts {
+  font-size: 60px;
+  line-height: 60px;
+  padding-top: 35px;
+}
+.content .form-pic li .number .title {
+  font-weight: bold;
+}
+.content .form-pic li:nth-of-type(1) {
+  background-color: #1cc09f ;
+}
+.content .form-pic li:nth-of-type(2) {
+  background-color: #63a3df ;
+}
+.content .form-pic li:nth-of-type(3) {
+  background-color: #fb5651 ;
+}
+.content .form-pic li:nth-of-type(4) {
+  margin-right: 0;
+  background-color: #e6a548 ;
+}
+.content .line-chart {
+  height: 415px;
+  background-color: #fff;
+}
