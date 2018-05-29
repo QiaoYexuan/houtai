@@ -1,0 +1,47 @@
+/* fun的背景 */
+.bgp-14{
+    background-position-y: 14px;
+}
+.bgp-28{
+    background-position-y: 28px;
+}
+.bgp-42{
+    background-position-y: 42px;
+}
+/* fun的背景 */
+.bgp-15{
+    background-position-y: 15px;
+}
+.bgp-30{
+    background-position-y: 30px;
+}
+.bgp-45{
+    background-position-y: 45px;
+}
+.bgp-60{
+    background-position-y: 60px;
+}
+.bgp-75{
+    background-position-y: 75px;
+}
+.bgp-90{
+    background-position-y: 90px;
+}
+.bgp-105{
+    background-position-y: 105px;
+}
+
+.down{
+    width: 0;
+    height: 0;
+    border-top: 4px solid #fff;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+.right{
+    width: 0;
+    height: 0;
+    border-left: 4px solid #fff;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
