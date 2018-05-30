@@ -26,6 +26,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 99;
 }
 .head h1 {
   float: left;
@@ -61,6 +62,7 @@ a {
   position: fixed;
   top: 60px;
   left: 0;
+  z-index: 99;
 }
 .navpage li {
   width: 260px;
@@ -102,7 +104,4 @@ a {
   display: inline-block;
   vertical-align: bottom;
   color: #000000;
-}
-.content header span {
-  font-size: 20px;
 }
