@@ -1,20 +1,9 @@
 .content {
   background-color: #f3f3f3;
-}
-.content .block {
-  box-sizing: border-box;
-  position: absolute;
-  top: 65px;
-  left: 0px;
-  width: 23px;
-  height: 36px;
-  background-color: #cfcece;
-  text-align: center;
-  padding-top: 10px;
-}
-.content .block span {
-  display: inline-block;
-  border-left-color: #283643;
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: 1s;
 }
 .content .subnav {
   height: 56px;
@@ -163,9 +152,43 @@
 .content .tasks-table .tasks .shuju li {
   height: 40px;
   border-bottom: 1px solid #ddd;
+  padding: 10px 0 0 17px;
+  box-sizing: border-box;
+}
+.content .tasks-table .tasks .shuju li div {
+  float: left;
+}
+.content .tasks-table .tasks .shuju li div label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+  vertical-align: top;
+  background: url(../images/active-icon1.png) no-repeat;
+}
+.content .tasks-table .tasks .shuju li div a {
+  line-height: 14px;
+  color: #777777;
+}
+.content .tasks-table .tasks .shuju li .time {
+  width: auto;
+  float: right;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 7px;
+  background-color: #1cc09f;
+  text-align: center;
+  margin-right: 15px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 18px;
 }
 .content .tasks-table .tasks .shuju li:nth-last-of-type(1) {
   border-bottom: none;
+}
+.content .tasks-table .tasks .more {
+  float: right;
+  margin-top: 15px;
 }
 .content .tasks-table .table {
   float: left;
@@ -174,4 +197,19 @@
   width: 845px;
   height: 355px;
   background-color: #fff;
+}
+.content .tasks-table .table table {
+  border-collapse: collapse;
+  width: 815px;
+  height: 261px;
+  text-align: left;
+}
+.content .tasks-table .table table thead {
+  border-color: inherit;
+  border: 1px solid #dddddd;
+}
+.content .tasks-table .table table tbody {
+  border-color: inherit;
+  border: 1px solid #dddddd;
+  vertical-align: middle;
 }

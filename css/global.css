@@ -54,14 +54,13 @@ a {
   background-image: url(../images/xuebi.png);
 }
 .navpage {
-  display: none;
   width: 260px;
   height: 540px;
   padding-top: 20px;
   background-color: #283643;
   position: fixed;
   top: 60px;
-  left: 0;
+  left: -260px;
   z-index: 99;
 }
 .navpage li {
@@ -69,6 +68,8 @@ a {
   height: 54px;
   text-align: left;
   line-height: 54px;
+}
+.navpage li a {
   color: #b59978;
 }
 .navpage li label {
@@ -85,10 +86,14 @@ a {
 }
 .navpage li:hover {
   background: #1cc09f;
+}
+.navpage li:hover a {
   color: #fff;
 }
 .navpage .active {
   background: #1cc09f;
+}
+.navpage .active a {
   color: #fff;
 }
 .content {
@@ -104,4 +109,20 @@ a {
   display: inline-block;
   vertical-align: bottom;
   color: #000000;
+}
+.block {
+  box-sizing: border-box;
+  position: fixed;
+  top: 65px;
+  left: 0px;
+  width: 23px;
+  height: 36px;
+  z-index: 98;
+  background-color: #cfcece;
+  text-align: center;
+  padding-top: 10px;
+}
+.block span {
+  display: inline-block;
+  border-left-color: #283643;
 }

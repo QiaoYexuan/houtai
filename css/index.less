@@ -1,20 +1,9 @@
 .content{
     background-color: #f3f3f3;
-    .block{
-        box-sizing: border-box;
-        position: absolute;
-        top: 65px;
-        left: 0px;
-        width: 23px;
-        height: 36px;
-        background-color: #cfcece;
-        text-align: center;
-        padding-top: 10px;
-        span{
-            display: inline-block;
-            border-left-color:#283643;
-        }
-    }
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: 1s;
     .subnav{
         height: 56px;
         background-color: #fff;
@@ -158,10 +147,45 @@
                 li{
                     height: 40px;
                     border-bottom: 1px solid #ddd;
+                    padding: 10px 0 0 17px;
+                    box-sizing: border-box;
+                    div{
+                        // width: 243px;
+                        float: left;
+                        label{
+                            display: inline-block;
+                            width: 15px;
+                            height: 15px;
+                            margin-right: 7px;
+                            vertical-align: top;
+                            background: url(../images/active-icon1.png) no-repeat;
+                        }
+                        a{
+                            line-height: 14px;
+                            color: #777777;
+                        }
+                    }
+                    .time{
+                        width: auto;
+                        float: right;
+                        font-size: 14px;
+                        line-height: 18px;
+                        padding: 0 7px;
+                        background-color: #1cc09f;
+                        text-align: center;
+                        margin-right: 15px;
+                        color: #fff;
+                        font-weight: bold;
+                        border-radius: 18px;
+                    }
                 }
                 li:nth-last-of-type(1){
                     border-bottom: none;
                 }
+            }
+            .more{
+                float: right;
+                margin-top: 15px;
             }
         }
         .table{
@@ -171,6 +195,21 @@
             width: 845px;
             height: 355px;
             background-color: #fff;
+            table{
+                border-collapse: collapse;
+                width: 815px;
+                height: 261px;
+                text-align: left;
+                thead{
+                    border-color: inherit;
+                    border:1px solid #dddddd;
+                }
+                tbody{
+                    border-color: inherit;
+                    border:1px solid #dddddd;
+                    vertical-align: middle;
+                }
+            }
         }
     }
 }
