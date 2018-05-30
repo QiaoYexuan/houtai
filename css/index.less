@@ -138,17 +138,39 @@
         background-color: #fff;
     }
     .tasks-table{
+        overflow: hidden;
+        h3{
+            line-height: 56px;
+        }
         .tasks{
+            float: left;
+            box-sizing: border-box;
             padding: 0 15px;
-            h3{
-
+            width: 407px;
+            height: 355px;
+            margin-right: 17px;
+            background-color: #fff;
+            .shuju{
+                border: 1px solid #ddd;
+                width: 375px;
+                height: 245px;
+                border-radius: 5px;
+                li{
+                    height: 40px;
+                    border-bottom: 1px solid #ddd;
+                }
+                li:nth-last-of-type(1){
+                    border-bottom: none;
+                }
             }
         }
         .table{
+            float: left;
+            box-sizing: border-box;
             padding: 0 15px;
-            h3{
-                
-            }
+            width: 845px;
+            height: 355px;
+            background-color: #fff;
         }
     }
 }
