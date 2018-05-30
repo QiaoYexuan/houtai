@@ -1,8 +1,8 @@
 let block = document.getElementById('block');
 let navpage = document.getElementById('navpage');
 let content = document.getElementById('content');
+let linechart = document.getElementById('line-chart');
 let children = Array.from(content.children);
-console.log(children)
 let ink = true;
 let timer;
 block.onclick = function(){
@@ -13,12 +13,14 @@ block.onclick = function(){
         block.style.transition = '1s'
         content.style.left = '260px'
         content.style.width = content.offsetWidth - 260 + 'px'
+        linechart.style.width = linechart.offsetWidth - 260 + 'px'
         ink = !ink
     }else{
         navpage.style.left = '-260px';
         block.style.left = '0'
         content.style.left = '0'
         content.style.width = content.offsetWidth + 260 + 'px'
+        linechart.style.width = linechart.offsetWidth + 260 + 'px'
         ink = !ink
     }
     

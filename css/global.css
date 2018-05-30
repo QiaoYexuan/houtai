@@ -60,7 +60,7 @@ a {
   background-color: #283643;
   position: fixed;
   top: 60px;
-  left: -260px;
+  left: 0;
   z-index: 99;
 }
 .navpage li {
@@ -97,8 +97,10 @@ a {
   color: #fff;
 }
 .content {
+  width: 1089px;
   padding: 20px 40px ;
   margin-top: 60px;
+  margin-left: 260px;
 }
 .content header {
   margin-bottom: 30px;
@@ -114,7 +116,7 @@ a {
   box-sizing: border-box;
   position: fixed;
   top: 65px;
-  left: 0px;
+  left: 260px;
   width: 23px;
   height: 36px;
   z-index: 98;

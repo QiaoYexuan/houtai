@@ -1,4 +1,5 @@
 .content {
+  box-sizing: border-box;
   background-color: #f3f3f3;
   position: relative;
   left: 0;
@@ -22,12 +23,13 @@
 .content .form-pic {
   overflow: hidden;
   margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
 }
 .content .form-pic li {
-  float: left;
   box-sizing: border-box;
   padding: 14px 0 0 14px;
-  width: 298px;
+  width: 23.08305752561072%;
   height: 242px;
   margin-right: 25px;
 }
@@ -46,7 +48,6 @@
   margin-bottom: 14px;
 }
 .content .form-pic li .number {
-  width: 194px;
   height: 124px;
   margin-left: 90px;
   background-color: #fff;
@@ -83,6 +84,8 @@
 .content .percent {
   overflow: hidden;
   margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
 }
 .content .percent span {
   display: block;
@@ -91,7 +94,6 @@
   font-size: 20px;
 }
 .content .percent li {
-  float: left;
   width: 298px;
   height: 211px;
   margin-right: 25px;
@@ -103,23 +105,23 @@
 .content .percent div {
   width: 150px;
   height: 160px;
-  margin-left: 80px;
+  margin-left: 40px;
 }
 .content .bar-cook {
   margin-top: 22px;
   margin-bottom: 22px;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 .content .bar-cook .bar {
-  float: left;
-  width: 944px;
+  width: 86.68503213957759%;
   height: 415px;
   background-color: #fff;
   margin-right: 28px;
 }
 .content .bar-cook .cook {
   float: left;
-  width: 297px;
+  width: 27.27272727272727%;
   height: 415px;
   background-color: #fff;
 }
@@ -129,23 +131,22 @@
   background-color: #fff;
 }
 .content .tasks-table {
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 .content .tasks-table h3 {
   line-height: 56px;
 }
 .content .tasks-table .tasks {
-  float: left;
   box-sizing: border-box;
   padding: 0 15px;
-  width: 407px;
+  width: 37.37373737373737%;
   height: 355px;
   margin-right: 17px;
   background-color: #fff;
 }
 .content .tasks-table .tasks .shuju {
   border: 1px solid #ddd;
-  width: 375px;
   height: 245px;
   border-radius: 5px;
 }
@@ -191,10 +192,9 @@
   margin-top: 15px;
 }
 .content .tasks-table .table {
-  float: left;
   box-sizing: border-box;
   padding: 0 15px;
-  width: 845px;
+  width: 77.5941230486685%;
   height: 355px;
   background-color: #fff;
 }
