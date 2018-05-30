@@ -118,6 +118,7 @@
 }
 .content .bar-cook {
   margin-top: 22px;
+  margin-bottom: 22px;
   overflow: hidden;
 }
 .content .bar-cook .bar {
@@ -132,4 +133,15 @@
   width: 297px;
   height: 415px;
   background-color: #fff;
+}
+.content .area {
+  height: 415px;
+  margin-bottom: 22px;
+  background-color: #fff;
+}
+.content .tasks-table .tasks {
+  padding: 0 15px;
+}
+.content .tasks-table .table {
+  padding: 0 15px;
 }
