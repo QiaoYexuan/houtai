@@ -103,7 +103,7 @@
         div{
             width: 150px;
             height: 160px;
-            margin-left: 40px;
+            margin: 0 auto;
         }
     }
     .bar-cook{
@@ -144,16 +144,17 @@
             background-color: #fff;
             .shuju{
                 border: 1px solid #ddd;
-                height: 245px;
                 border-radius: 5px;
                 li{
-                    height: 40px;
+                    position: relative;
                     border-bottom: 1px solid #ddd;
-                    padding: 10px 0 0 17px;
+                    padding: 10px 0 10px 17px;
                     box-sizing: border-box;
+                    overflow: hidden;
                     div{
-                        // width: 243px;
                         float: left;
+                        width: 60.06944444444444%;
+                        word-wrap: break-word;
                         label{
                             display: inline-block;
                             width: 15px;
@@ -169,13 +170,14 @@
                     }
                     .time{
                         width: auto;
-                        float: right;
-                        font-size: 14px;
+                        position: absolute;
+                        top: 10px;
+                        right: 15px;
+                        font-size: 12px;
                         line-height: 18px;
                         padding: 0 7px;
                         background-color: #1cc09f;
                         text-align: center;
-                        margin-right: 15px;
                         color: #fff;
                         font-weight: bold;
                         border-radius: 18px;
@@ -198,7 +200,7 @@
             background-color: #fff;
             table{
                 border-collapse: collapse;
-                width: 815px;
+                width: 95.23809523809524%;
                 height: 261px;
                 text-align: left;
                 thead{

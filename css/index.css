@@ -105,7 +105,7 @@
 .content .percent div {
   width: 150px;
   height: 160px;
-  margin-left: 40px;
+  margin: 0 auto;
 }
 .content .bar-cook {
   margin-top: 22px;
@@ -147,17 +147,19 @@
 }
 .content .tasks-table .tasks .shuju {
   border: 1px solid #ddd;
-  height: 245px;
   border-radius: 5px;
 }
 .content .tasks-table .tasks .shuju li {
-  height: 40px;
+  position: relative;
   border-bottom: 1px solid #ddd;
-  padding: 10px 0 0 17px;
+  padding: 10px 0 10px 17px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .content .tasks-table .tasks .shuju li div {
   float: left;
+  width: 60.06944444444444%;
+  word-wrap: break-word;
 }
 .content .tasks-table .tasks .shuju li div label {
   display: inline-block;
@@ -173,13 +175,14 @@
 }
 .content .tasks-table .tasks .shuju li .time {
   width: auto;
-  float: right;
-  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 12px;
   line-height: 18px;
   padding: 0 7px;
   background-color: #1cc09f;
   text-align: center;
-  margin-right: 15px;
   color: #fff;
   font-weight: bold;
   border-radius: 18px;
@@ -200,7 +203,7 @@
 }
 .content .tasks-table .table table {
   border-collapse: collapse;
-  width: 815px;
+  width: 95.23809523809524%;
   height: 261px;
   text-align: left;
 }
