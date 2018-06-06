@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    font:14px "微软雅黑","宋体";
+    color: #777777;
+    // overflow-x: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.head{
+    width: 1366px;
+    height: 60px;
+    background-color: #1cc09f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    h1{
+        float: left;
+        height: 60px;
+        width: 260px;
+        background: url(../images/logo.png) no-repeat;
+        text-indent: -9999px;
+    }
+    .fun{
+        float: right;
+        overflow: hidden;
+        padding-top: 20px;
+        li{
+            float: left;
+            margin-right: 46px;
+            span{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .icon{
+                width: 14px;
+                height: 14px;
+                background-image: url(../images/xuebi.png);
+            }
+        }
+    }
+}
+.navpage{
+    width: 260px;
+    height:600px;
+    padding-top: 20px;
+    background-color: #283643;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 99;
+    li{
+        width: 260px;
+        height: 54px;
+        text-align: left;
+        line-height: 54px;
+        a{
+            color: #b59978;
+        }
+        label{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-image: url(../images/active-icon1.png);
+            vertical-align: middle;
+            margin-right: 13px;
+            margin-left: 18px;
+        }
+        .color{
+            background-image: url(../images/icons.png);
+        }
+    }
+    li:hover{
+        background: #1cc09f;
+    }
+    li:hover a{
+        color: #fff;
+    }
+    .active{
+        background: #1cc09f;
+    }
+    .active a{
+        color: #fff;
+    }
+}
+.content{
+    width: 1089px;
+    padding:20px 40px ;
+    margin-top: 60px;
+    margin-left: 260px;
+    header{
+        margin-bottom: 30px;
+        h3{
+            font-size: 30px;
+            line-height: 30px;
+            display: inline-block;
+            vertical-align: bottom;
+            color: #000000;
+        }
+    }
+}
+.block{
+    box-sizing: border-box;
+    position: fixed;
+    top: 65px;
+    left: 260px;
+    width: 23px;
+    height: 36px;
+    z-index: 98;
+    background-color: #cfcece;
+    text-align: center;
+    padding-top: 10px;
+    span{
+        display: inline-block;
+        border-left-color:#283643;
+    }
+}
