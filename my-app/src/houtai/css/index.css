@@ -167,7 +167,7 @@
   height: 15px;
   margin-right: 7px;
   vertical-align: top;
-  background: url(../images/active-icon1.png) no-repeat;
+  /* background: url(images/active-icon1.png) no-repeat; */
 }
 .content .tasks-table .tasks .shuju li div a {
   line-height: 14px;

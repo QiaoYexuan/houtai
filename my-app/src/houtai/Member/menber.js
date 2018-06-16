@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
+
 import '../css/huiyuan.css';
 import '../css/global.css';
 import '../css/tools.css';
-import ToHead from '../App/head'
-import ToNavPage from '../App/navpage'
 
 class MenBer extends Component {
     constructor(props) {

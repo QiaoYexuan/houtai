@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-
+import {Route,Link} from 'react-router-dom';
+import MenBer from '../Member/menber'
 import '../css/index.css';
 import '../css/global.css';
 import '../css/tools.css';
-import ToHead from './head'
-import ToNavPage from './navpage'
+import Index from '../index/index';
+
 class App extends Component {
     constructor(props) {
         super(props);
@@ -13,185 +14,68 @@ class App extends Component {
     render() {
         return (
             <div>
-                <ToHead />
-                <ToNavPage />
-            <section className="content" id="content">
-                <header>
-                    <h3>仪表板</h3>
-                    <span>应用程序摘要</span>
+                <header className="head">
+                    <h1>MASTER</h1>
+                    <ul className="fun">
+                        <li>
+                            <span className="icon"></span>
+                            <span className="down"></span>
+                        </li>
+                        <li>
+                            <span className="icon bgp-42"></span>
+                            <span className="down"></span>
+                        </li>
+                        <li>
+                            <span className="icon  bgp-28"></span>
+                            <span className="down"></span>
+                        </li>
+                        <li>
+                            <span className="icon  bgp-12"></span>
+                            <span className="down"></span>
+                        </li>
+                    </ul>
                 </header>
-                <nav className="subnav">
-                    <a href="javascript:;">Home</a>
-                    <span>/</span>
-                    <a href="javascript:;">Library</a>
-                    <span>/</span>
-                    <a href="javascript:;" className="active">Data</a>
-                </nav>
-                <ul className="form-pic">
+                <ul className="navpage" id="navpage">
+                    <Link to="/">
+                        <li className="active">
+                            <label className="color"></label>
+                            <a href="javascript:;">数据统计</a>
+                        </li>
+                    </Link>
+                    <Link to="/menber">
+                        <li>
+                            <label className="bgp-15"></label>
+                            <a href="javascript:;">会员管理</a>
+                        </li>
+                    </Link>
                     <li>
-                        <div className="pic"><img src="images/form.png" alt="图表"/></div>
-                        <div className="number">
-                            <span className="fonts">0</span>
-                            <span className="title">Daily</span>
-                        </div>
+                        <label className="bgp-30"></label>
+                        <a href="javascript:;">图表</a>
                     </li>
                     <li>
-                        <div className="pic"><img src="images/pay.png" alt="购物车"/></div>
-                        <div className="number">
-                            <span className="fonts">0</span>
-                            <span className="title">Daily</span>
-                        </div>
+                        <label className="bgp-45"></label>
+                        <a href="javascript:;">标签和面板</a>
                     </li>
                     <li>
-                        <div className="pic"><img src="images/take.png" alt="聊天"/></div>
-                        <div className="number">
-                            <span className="fonts">0</span>
-                            <span className="title">Daily</span>
-                        </div>
+                        <label className="bgp-60"></label>
+                        <a href="javascript:;">响应表</a>
                     </li>
                     <li>
-                        <div className="pic"><img src="images/pepoles.png" alt="人群"/></div>
-                        <div className="number">
-                            <span className="fonts">0</span>
-                            <span className="title">Daily</span>
-                        </div>
+                        <label className="bgp-75"></label>
+                        <a href="javascript:;">形式</a>
+                    </li>
+                    <li>
+                        <label className="bgp-90"></label>
+                        <a href="javascript:;">多级下拉菜单</a>
+                    </li>
+                    <li>
+                        <label className="bgp-105"></label>
+                        <a href="javascript:;">空白页</a>
                     </li>
                 </ul>
-                <div className="line-chart" id="line-chart"></div>
-                <ul id="percent" className="percent">
-                    <li>
-                        <span>顾客</span>
-                        <div id="shopper" className="shopper"></div>
-                    </li>
-                    <li>
-                        <span>销售</span>
-                        <div id="sell" className="sell"></div>
-                    </li>
-                    <li>
-                        <span>利润</span>
-                        <div id="gain" className="gain"></div>
-                    </li>
-                    <li className="margin0">
-                        <span>访问次数</span>
-                        <div id="degree" className="degree"></div>
-                    </li>
-                </ul>
-                <div className="bar-cook">
-                    <div className="bar" id="bar"></div>
-                    <div className="cook" id="cook"></div>
-                </div>
-                <div className="area" id="area"></div>
-                <div className="tasks-table">
-                    <div className="tasks">
-                        <h3>任务面板</h3>
-                        <ul className="shuju">
-                            <li>
-                                <div>
-                                    <label></label>
-                                    <a href="javascript:;">Order 392 shipped</a>
-                                </div>
-                                <div className="time">3 minutes ago</div>
-                            </li>
-                            <li>
-                                <div>
-                                    <label></label>
-                                    <a href="javascript:;">Order 392 shipped</a>
-                                </div>
-                                <div className="time">3 minutes ago</div>
-                            </li>
-                            <li>
-                                <div>
-                                    <label></label>
-                                    <a href="javascript:;">Order 392 shipped</a>
-                                </div>
-                                <div className="time">3 minutes ago</div>
-                            </li>
-                            <li>
-                                <div>
-                                    <label></label>
-                                    <a href="javascript:;">Order 392 shipped</a>
-                                </div>
-                                <div className="time">3 minutes ago</div>
-                            </li>
-                            <li>
-                                <div>
-                                    <label></label>
-                                    <a href="javascript:;">Order 392 shipped</a>
-                                </div>
-                                <div className="time">3 minutes ago</div>
-                            </li>
-                            <li>
-                                <div>
-                                    <label></label>
-                                    <a href="javascript:;">Order 392 shipped</a>
-                                </div>
-                                <div className="time">3 minutes ago</div>
-                            </li>
-                        </ul>
-                        <a href="javascript:;" className="more">More Tasks</a>
-                    </div>
-                    <div className="table">
-                        <h3>数据表格</h3>
-                        <table align="center" border="1">
-                            <thead>
-                                <tr>
-                                    <th>编号</th>
-                                    <th>名字</th>
-                                    <th>性别</th>
-                                    <th>用户名</th>
-                                    <th>电子邮件</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>John</td>
-                                    <td>boy</td>
-                                    <td>John14582</td>
-                                    <td>name@site.com</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>John</td>
-                                    <td>boy</td>
-                                    <td>John14582</td>
-                                    <td>name@site.com</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>John</td>
-                                    <td>boy</td>
-                                    <td>John14582</td>
-                                    <td>name@site.com</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>John</td>
-                                    <td>boy</td>
-                                    <td>John14582</td>
-                                    <td>name@site.com</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>John</td>
-                                    <td>boy</td>
-                                    <td>John14582</td>
-                                    <td>name@site.com</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>John</td>
-                                    <td>boy</td>
-                                    <td>John14582</td>
-                                    <td>name@site.com</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <footer></footer>
-            </section>
-            <footer className="foot"></footer>
+                <div className="block" id="block"><span className="right"></span></div>
+                <Route exact path="/menber" component={MenBer}></Route>
+                <Route exact path="/" component={Index}></Route>
             </div>
         )
     }

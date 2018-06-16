@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import MenBer from '../Member/menber'
-import App from './app'
 import {Route,Link} from 'react-router-dom'
 import '../css/global.css';
 import '../css/tools.css';
@@ -14,14 +13,18 @@ class ToNavPage extends Component {
         return (
             <div>
                 <ul className="navpage" id="navpage">
-                    <li className="active">
-                        <label className="color"></label>
-                        <Link to="/"><a href="javascript:;">数据统计</a></Link>
-                    </li>
-                    <li>
-                        <label className="bgp-15"></label>
-                        <Link to="/menber"><a href="javascript:;">会员管理</a></Link>
-                    </li>
+                    <Link to="/">
+                        <li className="active">
+                            <label className="color"></label>
+                            <a href="javascript:;">数据统计</a>
+                        </li>
+                    </Link>
+                    <Link to="/menber">
+                        <li>
+                            <label className="bgp-15"></label>
+                            <a href="javascript:;">会员管理</a>
+                        </li>
+                    </Link>
                     <li>
                         <label className="bgp-30"></label>
                         <a href="javascript:;">图表</a>
@@ -48,8 +51,7 @@ class ToNavPage extends Component {
                     </li>
                 </ul>
                 <div className="block" id="block"><span className="right"></span></div>
-                <Route path="/menber" component={MenBer}></Route>
-                <Route path="/" component={App}></Route>
+                <Route exact path="/menber" component={MenBer}></Route>
             </div>
         )
     }
